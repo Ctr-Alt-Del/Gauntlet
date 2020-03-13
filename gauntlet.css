@@ -232,6 +232,9 @@ span2{
 
 .curated{
     text-align: center;
+    background-color: rgb(248, 248, 248);
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .spots{
