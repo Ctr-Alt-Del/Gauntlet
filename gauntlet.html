@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
+        <link href="gauntlet.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/font-awesome.min.css">
+        <title>Gauntlet</title>
+        <script>
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+            if (!event.target.matches('.test,')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+            }
+            window.outclick = function(event) {
+                openDropdown.classList.remove('hide');
+            }
+
+
+            function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+            if (!event.target.matches('.test,')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+            }
+
+            function myFunction3() {
+                alert("This is for visual Purposes only!");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <span><img class="logo" src="logo.png"></span>
+            <span><h3 class="hourThing">hourspace</h3></span>
+            <i class="fa fa-search"></i>
+            <input class="search" placeholder="Search">
+            <span><button onclick="myFunction3()" class="list">List Your Space</button></span>
+            <span><button onclick="myFunction3()" class="account">Sign up</button></span>
+            <span><button onclick="myFunction3()" class="account">Log In</button></span>
+        </div>
+        <div class="space">
+            <img class="banner" src="bg.png">
+            <div class="textBox">
+                <h1 style="font-weight: bold; font-size: 40px;">Find a Space</h1>
+                <p style="font-size:15px;">Discover & Book a Space for Your Next Event</p>
+                <form>
+                    <br>
+                    <span><div class="dropdown">
+                        <p onclick="myFunction()" class="test">Location<i class="fa fa-angle-down"></i></p>
+                        <div id="myDropdown" class="dropdown-content">
+                          <p style="float: left;">Cape Town</p>
+                          <p style="float: left;">Gauteng</p>
+                          <p style="float: left;">Johannesburg</p>
+                          <p style="float: left;">Durban</p>
+                        </div>
+                      </div></span>
+                      <span><div class="dropdown">
+                        <p onclick="myFunction2()" class="test">What are you planning<i class="fa fa-angle-down"></i></p>
+                        <div id="myDropdown2" class="dropdown-content">
+                          <p style="float: left;">Wedding</p>
+                          <p style="float: left;">Formal</p>
+                          <p style="float: left;">Informal</p>
+                          <p style="float: left;">Meeting</p>
+                        </div>
+                      </div></span> 
+                    <span><button onclick="myFunction3()" class="button">Search</button></span>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="nextEvent">
+            <h2>Where are you planning your event?</h2>
+            <p>Discover & Book a Space for for your Next Event</p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <span2><div class="col-sm-4">
+                        <img class="events" src="CapeTown.png">
+                            <div class="textBox2">
+                                <p>Cape Town</p>
+                            </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="events" src="Gauteng.png">
+                        <div class="textBox2">
+                            <p>Gauteng</p>
+                        </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="events" src="Durban.png">
+                        <div class="textBox2">
+                            <p>Durban</p>
+                        </div>
+                    </div></span2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="curated">
+            <h2>Our Curated List</h2>
+            <p>Some of our favorite, featured collections</p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <span2><div class="col-sm-4">
+                        <img class="spots" src="thumb1.jpg">
+                            <div class="textBox3">
+                                <p>Scenic Meeting Spots</p>
+                            </div>
+                            <div class="textBox4">
+                                <p>CPT</p>
+                            </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="spots" src="thumb2.jpg">
+                        <div class="textBox3">
+                            <p>Affordable Part Venues</p>
+                        </div>
+                        <div class="textBox4">
+                            <p>JHB</p>
+                        </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="spots" src="thumb3.jpg">
+                        <div class="textBox3">
+                            <p>Scenic Meeting Spots</p>
+                        </div>
+                        <div class="textBox4">
+                            <p>DBN</p>
+                        </div>
+                    </div></span2>
+                </div>
+
+                <div class="row">
+                    <span2><div class="col-sm-4">
+                        <img class="spots" src="thumb4.jpg">
+                            <div class="textBox3">
+                                <p>Affordable Part Venues</p>
+                            </div>
+                            <div class="textBox4">
+                                <p>CPT</p>
+                            </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="spots" src="thumb5.jpg">
+                        <div class="textBox3">
+                            <p>Scenic Meeting Spots</p>
+                        </div>
+                        <div class="textBox4">
+                            <p>JHB</p>
+                        </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="spots" src="thumb6.jpg">
+                        <div class="textBox3">
+                            <p>Affordable Part Venues</p>
+                        </div>
+                        <div class="textBox4">
+                            <p>DBN</p>
+                        </div>
+                    </div></span2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="trending">
+            <h2>Trending Spaces</h2>
+            <p>Popular with Hourspace Users</p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <span2><div class="col-sm-4">
+                        <img class="events" src="pop1.jpg">
+                            <div class="textBox5">
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <p style="float: right;">R900 ZAR</p>
+                            </div>
+                            <div class="details">
+                                <div class="location">
+                                    <p style="float: left; font-size: 13px;"><b>The Space Title</b></p>
+                                    <p style="font-size: 12px;">Gardens, Cape Town</p>
+                                    <img class="review" src="face1.jpg">
+                                </div>
+                            </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="events" src="pop2.jpg">
+                            <div class="textBox5">
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <p style="float: right;">R700 Zar</p>
+                            </div>
+                            <div class="details">
+                                <div class="location">
+                                    <p style="float: left; font-size: 13px;"><b>The Space Title</b></p>
+                                    <p style="font-size: 12px;">Gardens, Cape Town</p>
+                                    <img class="review" src="face2.jpg">
+                                </div>
+                            </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="events" src="pop3.jpg">
+                            <div class="textBox5">
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <span style="float: left;" class="fa fa-star checked"></span>
+                                <p style="float: right;">R650 ZAR</p>
+                            </div>
+                            <div class="details">
+                                <div class="location">
+                                    <p style="float: left; font-size: 13px;"><b>The Space Title</b></p>
+                                    <p style="font-size: 12px;">Gardens, Cape Town</p>
+                                    <img class="review" src="face3.jpg">
+                                </div>
+                            </div>
+                    </div></span2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="Banner2">
+            <img class="banner2" src="secure.jpg">
+            <div class="textbox6">
+                <h2>100% Secure and Protected</h2>
+                <p>Trust and Safety is our #1 priority at Hourspace</p>
+            </div>
+            <div class="twoBox">
+                <span3><div class="textBox7">
+                    <h4>Looking for a space</h4>
+                    <i class="fa fa-check" style="color: white; float: left; font-size: 14px;" ></i><p class="point">Secure Merchant Transactions</p>
+                    <i class="fa fa-check" style="color: white; float: left;"></i><p class="point">Authentic Hosts</p>
+                    <i class="fa fa-check" style="color: white; float: left;"></i><p class="point">Direct Messaging with Hosts</p>
+                    <i class="fa fa-check" style="color: white; float: left;"></i><p class="point">Host Profile and Reviews</p>
+                </div></span3>
+                <span3><div class="textBox8">
+                    <h4>Hosting Out a Space</h4>
+                    <i class="fa fa-check" style="color: white; float: left; font-size: 14px;" ></i><p class="point">R1,000,000 Insurance Coverage</p>
+                    <i class="fa fa-check" style="color: white; float: left; font-size: 14px;" ></i><p class="point">Booking Management Platform Flexible</p>
+                    <i class="fa fa-check" style="color: white; float: left; font-size: 14px;" ></i><p class="point">Cancellation and Deposit Policies</p>
+                    <i class="fa fa-check" style="color: white; float: left; font-size: 14px;" ></i><p class="point">24/7 Customer Support Team</p>
+                </div></span3>
+            </div>
+        </div>
+        <br>
+        <div class="fellows">
+            <h2 style="text-align: center;">Meet Fellow Hourspacers</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <span2><div class="col-sm-4">
+                        <img class="events2" src="num1.jpg">
+                        <i class="fa fa-play-circle-o"></i>
+                            <div class="details2">
+                                <div class="location2">
+                                    <img class="review2" src="face4.jpg">
+                                    <p style="font-size: 13px;"><b>Host Name</b></p>
+                                    <p style="font-size: 12px;">Title of Space Here</p>
+                                </div>
+                            </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="events2" src="num2.jpg">
+                        <i class="fa fa-play-circle-o"></i>
+                            <div class="details2">
+                                <div class="location2">
+                                    <img class="review2" src="face5.jpg">
+                                    <p style="font-size: 13px;"><b>Host Name</b></p>
+                                    <p style="font-size: 12px;">Title of Space Here</p>
+                                </div>
+                            </div>
+                    </div></span2>
+                    <span2><div class="col-sm-4">
+                        <img class="events2" src="num3.jpg">
+                        <i class="fa fa-play-circle-o"></i>
+                            <div class="details2">
+                                <div class="location2">
+                                    <img class="review2" src="face6.jpg">
+                                    <p style="font-size: 13px;"><b>Host Name</b></p>
+                                    <p style="font-size: 12px;">Title of Space Here</p>
+                                </div>
+                            </div>
+                    </div></span2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="postFoot">
+            <div class="container">
+                <br>
+                <div class="row">
+                    <div class="inside">
+                        <div class="col-sm-4">
+                            <h3 class="green">Hourspace</h3>
+                            <br>
+                            <p>About</p>
+                            <p>Contact us</p>
+                            <p>Terms of Service</p>
+                            <p>Privacy Policy</p>
+                            <p>Cancellation Policy</p>
+                            <p>Space Use Agreement</p> 
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 class="green">Discover Spaces</h3>
+                            <br>
+                            <p>How it Works</p>
+                            <p>List Your Space</p>
+                            <p>Help Centre</p>
+                            <p>Press</p>
+                            <p>Site Map</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 class="green">Connect</h3>
+                            <br>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-google"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-pinterest"></i>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="foot">
+            <br>
+            <p>Copyright 2020 Hourspace.co. All rights reserved</p>
+        </div>
+    </body>
+</html>
